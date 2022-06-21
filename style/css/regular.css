@@ -1,0 +1,17 @@
+/* nav style start */
+
+.paw-on-active {
+    max-width: 20px;
+    visibility: hidden;
+}
+
+.navbar-nav .nav-item .active div div {
+    visibility: visible;
+}
+
+.bg-orenge {
+    background: var(--orengedark) !important;
+}
+
+
+/* nav style start */
