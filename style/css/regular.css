@@ -1,3 +1,79 @@
+/* main body css */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.clr-white {
+    color: var(--white);
+}
+
+.clr-dark1 {
+    color: var(--orengedark);
+}
+
+.clr-dark2 {
+    color: var(--textcolor);
+}
+
+.clr-dark3 {
+    color: var(--textcolororengebg);
+}
+
+
+/*  font size  */
+
+.h1mainhead {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 119.4%;
+}
+
+.spansubhead {
+    font-weight: 300 !important;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+
+/*  font size  end */
+
+
+/* background colgroup */
+
+.bg-dark1 {
+    background-color: var(--bluedark);
+}
+
+.bg-dark2 {
+    background: var(--orengedark);
+}
+
+
+/* background colgroup End*/
+
+
+/* btn css  */
+
+.buttn-main {
+    display: flex;
+    max-width: 450px;
+    min-height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+/* btn css End */
+
+
+/* main body css End*/
+
+
 /* nav style start */
 
 .paw-on-active {
@@ -5,13 +81,31 @@
     visibility: hidden;
 }
 
+.navbar {
+    min-height: 100px;
+    margin-bottom: -100px;
+}
+
 .navbar-nav .nav-item .active div div {
     visibility: visible;
 }
 
-.bg-orenge {
-    background: var(--orengedark) !important;
+
+/* nav style start */
+
+
+/* section 1 home */
+
+.secdiv1 {
+    background-image: url(/img/sec1bg.webp);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    /* padding: 225px 10px; */
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
 }
 
 
-/* nav style start */
+/* section 1 home end */
