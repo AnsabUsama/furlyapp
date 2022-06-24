@@ -45,6 +45,12 @@ body {
     line-height: 65px;
 }
 
+.headingwellnormal {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
 
 /*  font size  end */
 
@@ -150,14 +156,156 @@ body {
 
 .secdiv3 {
     background-color: #FFE8CD;
-    padding: 220px 10px;
+    padding: 100px 10px;
 }
 
 .divc2 img {
-    top: -100px;
+    top: 0px;
     left: 0;
     max-width: 500px;
 }
 
 
 /* section 3home end  */
+
+
+/* section 4 home start  */
+
+.divc3 img {
+    top: 60px;
+    left: 0;
+    max-width: 500px;
+}
+
+
+/* section 4 home end  */
+
+
+/* section 5 home  */
+
+.secdiv5 {
+    background-image: url(/img/se5bg.webp);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+    padding: 220px 10px;
+}
+
+
+/* section 5 home end */
+
+
+/* section 6 home start  */
+
+.presssecsty {
+    margin: 100px 10px;
+}
+
+
+/* section 6 home end  */
+
+
+/* section7 home start */
+
+.heart-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.headstarth {
+    margin-bottom: 50px;
+}
+
+
+/* section7 home end */
+
+
+/* section 8 home faq start  */
+
+.faq-style {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
+    margin: 20px 0;
+}
+
+.question {
+    padding: 30px 80px 30px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question::after {
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+    background-image: url('/img/pawfaq.webp');
+    background-repeat: repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    content: "";
+}
+
+.question.active::after {
+    transform: rotate(180deg);
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.answer {
+    padding: 0 20px 20px;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/* section 8 home faq end  */
+
+
+/* footer section start  */
+
+.footersection {
+    background: linear-gradient(180deg, #EB7C3A 0%, #DF622B 100%);
+    border-radius: 32px 32px 0px 0px;
+    padding: 50px 10px;
+    margin-top: 100px;
+}
+
+.foot-logo {
+    max-width: 200px;
+    margin: auto;
+}
+
+.footer-nav div {
+    gap: 30px;
+}
+
+.coptright {
+    font-weight: 200 !important;
+}
+
+.bottomnav2 {
+    gap: 20px;
+}
+
+.backtop {
+    text-decoration: none;
+}
+
+.backtop:hover {
+    color: var(--bluedark);
+}
+
+
+/* footer section end  */
