@@ -1,0 +1,23 @@
+@media (max-width: 1200px) and (min-width:769px) {
+    .divc2 img {
+        top: -85px;
+        left: 0;
+        max-width: 500px;
+    }
+    .divc3 img {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) and (min-width:769px) {
+    .secdiv4 {
+        padding: 100px 10px;
+    }
+    .secdiv5 {
+        background-image: none;
+        padding: 136px 10px;
+    }
+    .presssecsty {
+        margin: 0px 10px 100px 10px;
+    }
+}
