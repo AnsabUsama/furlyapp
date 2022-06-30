@@ -4,4 +4,7 @@
     --white: #ffffff;
     --textcolor: #3F3D6B;
     --textcolororengebg: #232323;
+    --formbg:rgb(245, 245, 245);
+    --formslabelsclr:rgb(153, 152, 152);
+    --inptextclr:rgb(194, 193, 193);
 }
