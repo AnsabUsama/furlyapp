@@ -39,4 +39,10 @@
             flex-direction: column;
             text-align: center;
         }
+        #navbarNav {
+            position: absolute;
+            top: 100px;
+            background-image: var(--orengedark);
+            width: 300px;
+        }
     }
