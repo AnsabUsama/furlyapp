@@ -329,7 +329,9 @@ body {
 .bgWhite {
     background-color: white;
 }
-
+a{
+    text-decoration: none;
+}
 
 /* SinglePet */
 
@@ -373,6 +375,10 @@ body {
     border-radius: 6px;
     padding: 20px 14px;
     border: 1px solid var(--white);
+    transition: .3s;
+}
+#selection-inp:hover{
+    border: 1px solid orange;
 }
 
 #selection-inp::placeholder,
@@ -532,4 +538,19 @@ body {
 
 .giftBoxImg {
     padding: 60px 0;
+}
+
+/* ====================== */
+
+.summaryForm input{
+    border: 1px solid lightgrey !important;
+}
+.summaryForm input:hover{
+    border: 1px solid orange !important;
+}
+.ancherClrOrng{
+    color: orange;
+}
+.bgOrange{
+    background-color: var(--bgLightOrange);
 }
