@@ -45,4 +45,7 @@
             background-image: var(--orengedark);
             width: 300px;
         }
+        .sectionPadding {
+            padding: 50px 20px;
+        }
     }
