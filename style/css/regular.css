@@ -529,40 +529,6 @@ body {
     padding: 50px 50px 50px 0px;
 }
 
-/* ===========MediaQuery============== */
-
-@media screen and (min-width:768px) and (max-width:992px) {
-    .sectionPadding{
-        padding: 50px 50px;
-    } 
-    .product-card {
-        min-height: 400px !important;
-    }
-    .giftBoxImg{
-        margin-top: 150px;
-    }
-    .summaryForm{
-        padding: 30px 0px 0px 0px;
-    }
-}
-
-
-
-@media screen and (min-width:320px) and (max-width:768px) {
-    
-    .sectionPadding{
-        padding: 50px 30px;
-    }
-    .catoImg{
-        max-width: 800px !important;
-        padding: 50px 0;
-    }
-    .giftBoxImg{
-        margin-top: 0px;
-    }
-    .summaryForm{
-        padding: 30px 0px 0px 0px;
-    }
 
 .giftBoxImg {
     padding: 60px 0;
