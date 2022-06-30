@@ -13,7 +13,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .clr-dark2 {
@@ -23,6 +22,16 @@ body {
 .clr-dark3 {
     color: var(--textcolororengebg);
 }
+
+
+/* spacing */
+
+.gap1 {
+    gap: 30px;
+}
+
+
+/* spacing end  */
 
 
 /*  font size  */
@@ -309,3 +318,218 @@ body {
 
 
 /* footer section end  */
+
+
+/* Alishba */
+
+.sectionPadding {
+    padding: 50px 70px;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+
+/* SinglePet */
+
+.pet-selectionBox {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.pet-selectionBox:hover {
+    border: 1px solid orange;
+}
+
+.pet-title {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.pet-subtitle {
+    font-size: 16px !important;
+}
+
+.start-btn {
+    border: none;
+    min-height: 60px;
+}
+
+
+/* ======FORM======= */
+
+.form-lables {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--formslabelsclr)
+}
+
+#selection-inp {
+    border: none;
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 20px 14px;
+    border: 1px solid var(--white);
+}
+
+#selection-inp::placeholder,
+.typeText {
+    color: var( --inptextclr);
+}
+
+#selection-inp::placeholder {
+    font-size: 15px;
+}
+
+#selection-inp,
+#select-options:focus {
+    outline: none;
+}
+
+.pets {
+    background-color: var(--white);
+    padding: 30px 30px 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+}
+
+.pets img {
+    width: 100%;
+}
+
+.pet2 {
+    margin-left: 60px;
+}
+
+.pet-title {
+    font-size: 16px !important;
+    padding-top: 14px;
+}
+
+#select-options {
+    border: none;
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 14px 20px;
+    color: var( --inptextclr);
+}
+
+.checkbox {
+    width: 18px;
+    color: red;
+}
+
+.allergic-selection {
+    border: none;
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 10px 14px;
+    width: 200px;
+}
+
+.addPet-btn {
+    border: none;
+    width: 200px;
+    min-height: 60px;
+}
+
+.petSelectionForm {
+    display: none;
+}
+
+.activeForm {
+    display: block;
+}
+
+
+/* Single-ProductPage */
+
+.wrapper {
+    background-color: var(--formbg);
+}
+
+.bgWhite {
+    background-color: var(--white);
+}
+
+.filled-bar {
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+
+.conditions-list {
+    background-color: rgb(196, 194, 194);
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.divider {
+    border: 1px dashed grey;
+}
+
+.quantitySelection {
+    padding: 10px !important;
+}
+
+.addToBox {
+    min-height: 40px;
+    font-size: 18px;
+}
+
+
+/* ============owl-carousel========== */
+
+.home-demo .item {
+    text-align: center;
+}
+
+.product-card {
+    max-width: 230px;
+    min-height: 440px;
+    border: 1px solid var(--formbg);
+    padding: 30px 30px 10px 30px;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.product-card:hover {
+    border: 1px solid orange;
+}
+
+.Product {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+/* ================================ */
+
+
+/* BoxBuilding */
+
+.catoImg{
+    max-width: 420px;
+    padding: 90px 0;
+}
+.catoImg2{
+    max-width: 300px;
+    padding: 50px 0;
+}
+.summaryForm{
+    padding: 50px 50px 50px 0px;
+}
+
+
+.giftBoxImg {
+    padding: 60px 0;
+}
