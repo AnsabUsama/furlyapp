@@ -554,3 +554,14 @@ a{
 .bgOrange{
     background-color: var(--bgLightOrange);
 }
+
+/* =================================== */
+
+.loginTitle{
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--bluedark);
+}
+.loginInfo{
+    font-size: 20px;
+}
