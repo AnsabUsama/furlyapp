@@ -337,7 +337,7 @@ a:hover
 /* SinglePet */
 
 .pet-selectionBox {
-    border: 1px solid lightgrey;
+    border: 1px solid var(--formbg) !important;
     border-radius: 2px;
     transition: .3s;
     cursor: pointer;
@@ -780,7 +780,7 @@ a:hover
     margin: auto;
     position: relative;
 }
-.box{
+.boxTyp{
     border: 1px solid orange;
     padding: 10px 20px;
     width: 100%;
@@ -794,7 +794,7 @@ a:hover
     border-bottom-right-radius: 4px;
 }
 
-.box h2{
+.boxTyp h2{
     font-weight: bolder;
     font-size: 30px;
 }
@@ -802,5 +802,155 @@ a:hover
     position: absolute;
     top: 32px;
 }
+/* ============================================= */
+/* ====SideBar========= */
 
-/* ============= */
+.profileSectionPage{
+    width: 100%;
+    position: relative;
+}
+.sideBar{
+    background-image: var(--orengedark);
+    padding: 50px 40px;
+    min-height: 100vh;
+    width: 400px;
+    position: fixed;
+}
+.navigation{
+    list-style: none;
+    padding: 70px 0;
+}
+.profileNavigationList li{
+    padding: 14px 14px;
+    position: relative;
+    transition: .2s;
+}
+.profileNavigationList li::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 50%;
+    background-color: red;
+    right: -2px;
+    top: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 0;
+}
+.profileNavigationList li:hover{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.profileNavigationList li:hover::after{
+    opacity: 1;
+}
+.profileNavigationList li:hover .sideBar-ancher{
+    color: var(--bluedark);
+    font-weight: bolder !important; 
+}
+.sideBar-ancher{
+    color: var(--white);
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .profileSectionPage{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoSection{
+        margin-left: 0px;
+    }
+    .sideCol{
+        width: 100%;
+    }
+    .sideBar{
+        padding: 20px;
+        min-height: 10vh;
+        width: 100%;
+    }
+    .navigation{
+        padding: 00px;
+    }
+    .profileNavigationList{
+        display: flex;
+        justify-content: space-evenly;
+        overflow: scroll;
+        width: 100%;
+    }
+    .sideBar{
+        width: 100%;
+    }
+    .sideBar-ancher{
+        color: var(--white);
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+}
+
+/* ================= */
+.infoSection{
+    width: 100%;
+    margin-left: 400px;
+}
+.profileTopBar{
+    padding: 20px 30px;
+    min-height: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.clrDark{
+    color: var(--bluedark);
+}
+.profileSpan{
+    font-size: 20px;
+    font-weight: 400;
+}
+.profileName{
+    font-size: 36px;
+    font-weight: bolder;
+}
+.allInformation-Box{
+    padding: 60px 32px;
+}
+.subTitles{
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.addressBtn{
+    background-color: var(--bluedark);
+    width: 240px;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.addresBox{
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 24px 20px;
+}
+.addressCategory{
+    background-color: lightgrey;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.upadteBtns{
+    border: 1px solid var(--bluedark);
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.removeBtn{
+    background-color: var(--bluedark);
+}
