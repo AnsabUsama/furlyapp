@@ -22,6 +22,11 @@ question.forEach(question => {
 
 // faqs section script end
 
+
+
+
+
+
 // Alishba
 
 // petSelection page script start
@@ -60,3 +65,57 @@ function openProduct(evt, productName) {
     evt.currentTarget.className += " active";
     }
 // singleProdut page script end
+
+
+
+
+
+// CheckOutPage-1 page script start
+
+
+// OpenBoxtabs
+function openTab(evt, tabBox) {
+    var i, tabsContentBox, tabNav;
+    tabsContentBox = document.getElementsByClassName("tabsContentBox");
+    for (i = 0; i < tabsContentBox.length; i++) {
+        tabsContentBox[i].style.display = "none";
+    }
+    tabNav = document.getElementsByClassName("tabNav");
+    for (i = 0; i < tabNav.length; i++) {
+        tabNav[i].className = tabNav[i].className.replace(" activeTab", "");
+    }
+    document.getElementById(tabBox).style.display = "block";
+    evt.currentTarget.className += " activeTab";
+    }
+
+
+// OpenSubscriptionModel
+function openSubModel(evt, subModel) {
+    var i, subscriptionModel, Subscription;
+    subscriptionModel = document.getElementsByClassName("subscriptionModel");
+    for (i = 0; i < subscriptionModel.length; i++) {
+        subscriptionModel[i].style.display = "none";
+    }
+    Subscription = document.getElementsByClassName("Subscription");
+    for (i = 0; i < Subscription.length; i++) {
+        Subscription[i].className = Subscription[i].className.replace(" activeModel", "");
+    }
+    document.getElementById(subModel).style.display = "block";
+    evt.currentTarget.className += " activeModel";
+    }
+// CheckOutPage-1 page script end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

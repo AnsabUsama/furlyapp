@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furly Pet</title>
+
+    <!-- bootstrap CDNs  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap CDNs End  -->
+    <!-- css files  -->
+    <link rel="stylesheet" href="style/css/regular.css" />
+    <link rel="stylesheet" href="style/css/color.css" />
+    <link rel="stylesheet" href="style/css/desk.css" />
+    <link rel="stylesheet" href="style/css/tab.css" />
+    <link rel="stylesheet" href="style/css/mobile.css" />
+    <!-- css files  -->
+
+    <!-- google font CDN for nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito"
+      rel="stylesheet"
+    />
+    <!-- google font CDN for nunito End -->
+  </head>
+
+  <body>
+    <div class="container-fluid wrapper">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 bgWhite">
+
+          <div class="pets-infoBox sectionPadding">
+            <div class=""><img src="img/Furly-Logo.svg" alt="" /></div>
+
+            <div class="pt-5 mt-3">
+                <h1 class="headingrand clr-dark1">Almost there!</h1>
+                <div class="headingBar"><hr></div>
+            </div>
+            <!-- ===== -->
+            <div class="buyBoxes py-3">
+                <div class="crossBtn d-flex justify-content-end pe-3"><img src="img/cross.svg" class="" alt=""></div>
+                
+                <div class="row">
+                    <div class="col-md-6 my-3">
+                        <div>
+                            <h4 class="boxTitle">Shelby’s Box</h4>
+                            <p class="spansubhead boxSubhead" >149 AED/ month</p>
+                            <a href="" class="freeShippingAnchr" >FREE SHIPPING</a>
+                        </div> 
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <div>
+                            <h4 class="boxTitle">Snow’s Box</h4>
+                            <p class="spansubhead boxSubhead" >349 AED/ month</p>
+                            <a href="" class="freeShippingAnchr" >FREE SHIPPING</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promoCodeBox my-5 d-flex justify-content-between align-items-center ">
+                    <input type="text" placeholder="Got a Promo Code ?" class="promoCodeInp" name="" id="">
+                    <a class="applyAncher ancherClrOrng">Apply</a>
+                </div>
+            </div>
+            <!-- ======== -->
+            <div><h1 class="headingrand clr-dark1">How would you like your furly?</h1></div>
+
+            <div class="subscriptionBox p-4 my-3">
+
+                <!-- Monthly-subscription -->
+                <div onclick="openSubModel(event, 'subModel-1')" class="Subscription d-flex align-items-center">
+
+                    <div class=" radioInp d-flex justify-content-center align-items-center mx-3">
+                        <label for="radio1" class="radioBtns"></label>
+                        <input type="radio" name="" id="radio1" class="radioBtn" >
+                    </div>
+
+                    <div class="pt-3">
+                        <h4 class="SubscriptionText"><strong>Subscribe Monthly</strong></h4>
+                        <p class="SubscriptionText" >Get your furly box delivered each month</p>
+                    </div>
+                </div>
+                
+                <!-- oneTime-subscription -->
+                <div onclick="openSubModel(event, 'subModel-2')" class="Subscription d-flex align-items-center my-3">
+
+                    <div class=" radioInp d-flex justify-content-center align-items-center mx-3">
+                        <label for="radio1" class="radioBtns"></label>
+                        <input type="radio" name="" id="radio1" class="radioBtn" >
+                    </div>
+
+                    <div class="pt-3">
+                        <h4 class="SubscriptionText"><strong>One-time</strong></h4>
+                        <p class="SubscriptionText" >one payment - no monthly charges</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ======= -->
+            <div class="d-flex justify-content-start">
+              <a href=""
+                class="buttn-main bg-dark2 clr-white my-4 start-btn w-100">
+                  Checkout - <b>Total 550 AED</b>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- subscriptionBox-1 -->
+
+        <div id="subModel-1" class=" col-lg-6 col-md-12 bgOrangeDark subscriptionModel activeModel">
+          <div class="sectionPadding">
+            
+            <div class="mt-5"><img src="/img/shelby's-box.svg" alt=""></div>
+
+            <div class="boxTabsSection py-3">
+
+                <!-- tabNav -->
+                <div class="boxNav">
+                    <div class="row">
+                        <div class="col-md-4 tabNav " onclick="openTab(event, 'tab-1')" ><div class="boxTabs"><h1 class="boxTabTitle" >Shelby’s Box</h1></div></div>
+                        <div class="col-md-4 tabNav " onclick="openTab(event, 'tab-2')" ><div class="boxTabs"><h1 class="boxTabTitle" >Snow’s Box</h1></div></div>
+                        <div class="col-md-4 tabNav " onclick="openTab(event, 'tab-3')" ><div class="boxTabs"><h1 class="boxTabTitle" >Snow’s Box</h1></div></div>
+                    </div>
+                </div>
+
+                <div class="py-3 text-light"><p class="tabText">Here’s a quick summary of what you’ve thrown into your furly box</p></div>
+
+                <!-- tabsContentBox-1 start -->
+
+                <div id="tab-1" class="tabsContentBox activeTab">
+
+                    <div class="contentbox p-3">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Dry Food</h4>
+                                    <p class="tabContnttext" >Royal Canin Indoor 2kg, Purina Wild 1.8kg</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ======= -->
+                    <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Wet Food</h4>
+                                    <p class="tabContnttext" >2x Whiskas Essentials 220g, Calibra Wet Beef 220g</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                    <!-- ======= -->
+                    <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Treats</h4>
+                                    <p class="tabContnttext" >2x Whiskas Essentials 220g, Calibra Wet Beef 220g</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                     <!-- ======= -->
+                     <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Litter</h4>
+                                    <p class="tabContnttext" >B2B</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                     <!-- ======= -->
+                     <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Extras</h4>
+                                    <p class="tabContnttext" >B2B</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                </div>
+
+                <!-- tabsContentBox-1 end -->
+
+
+                <!-- tabsContentBox-2 start -->
+
+                <div id="tab-2" class="tabsContentBox">
+
+                    <div class="contentbox p-3">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Dry Food 2</h4>
+                                    <p class="tabContnttext" >Royal Canin Indoor 2kg, Purina Wild 1.8kg</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ======= -->
+                    <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Wet Food</h4>
+                                    <p class="tabContnttext" >2x Whiskas Essentials 220g, Calibra Wet Beef 220g</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                    <!-- ======= -->
+                    <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Treats</h4>
+                                    <p class="tabContnttext" >2x Whiskas Essentials 220g, Calibra Wet Beef 220g</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                     <!-- ======= -->
+                     <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Litter</h4>
+                                    <p class="tabContnttext" >B2B</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                     <!-- ======= -->
+                     <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Extras</h4>
+                                    <p class="tabContnttext" >B2B</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                </div>
+
+                <!-- tabsContentBox-2 end -->
+
+
+                <!-- tabsContentBox-3 start -->
+
+                <div id="tab-3" class="tabsContentBox">
+
+                    <div class="contentbox p-3">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Dry Food 3</h4>
+                                    <p class="tabContnttext" >Royal Canin Indoor 2kg, Purina Wild 1.8kg</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ======= -->
+                    <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Wet Food</h4>
+                                    <p class="tabContnttext" >2x Whiskas Essentials 220g, Calibra Wet Beef 220g</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                    <!-- ======= -->
+                    <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Treats</h4>
+                                    <p class="tabContnttext" >2x Whiskas Essentials 220g, Calibra Wet Beef 220g</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                     <!-- ======= -->
+                     <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Litter</h4>
+                                    <p class="tabContnttext" >B2B</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                     <!-- ======= -->
+                     <div class="contentbox p-3 my-4">
+                        <div class="row d-flex align-items-center tabContntMD">
+
+                            <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                <div><img src="/img/dryFood.svg" alt=""></div>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="pt-3">
+                                    <h4 class="tabContntTitle">Extras</h4>
+                                    <p class="tabContnttext" >B2B</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex justify-content-end tabcontntCentrMd">
+                                <div><a href="" class="ancherClrOrng" >Edit</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ========== -->
+
+                </div>
+
+                <!-- tabsContentBox-3 end -->
+
+
+
+                <!-- =============================== -->
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- subscriptionBox2 -->
+
+        <div id="subModel-2" class=" col-lg-6 col-md-12 bgOrangeDark subscriptionModel ">
+            <div class="sectionPadding">
+              
+              <div class="mt-5 d-flex align-items-center"><img src="img/shelby's-box.svg" alt=""><h1 class="headingrand text-light ps-5">Here’s your furlys</h1></div>
+  
+              <div class="boxTabsSection py-3">
+  
+                  <div class="py-3 text-light"><p class="tabText">Here’s a quick summary of what you’ve thrown into your furly box</p></div>
+  
+                  <!-- tabsContentBox-1 start -->
+  
+                  <div class="tabsContentBox activeTab">
+  
+                      <div class="contentbox p-3">
+                          <div class="row d-flex align-items-center tabContntMD">
+  
+                              <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                  <div><img src="/img/dryFood.svg" alt=""></div>
+                              </div>
+  
+                              <div class="col-md-6">
+                                  <div class="pt-3">
+                                      <h4 class="tabContntTitle">Shelby’s Box</h4>
+                                      <p class="tabContnttext" >149 AED</p>
+                                  </div>
+                              </div>
+  
+                              <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                  <div><p class="pt-3" >8 items</p></div>
+                              </div>
+
+                              <div class="col-md-2 d-flex justify-content-end align-items-center tabcontntCentrMd">
+                                <div class="arrowDown">
+                                    <img src="/img/arrowDown.svg" alt="">
+                                </div>
+                              </div>
+  
+                          </div>
+                      </div>
+                      <!-- ======= -->
+                      <div class="contentbox p-3 my-4">
+                          <div class="row d-flex align-items-center tabContntMD">
+  
+                              <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                  <div><img src="/img/dogpet.webp" alt=""></div>
+                              </div>
+  
+                              <div class="col-md-6">
+                                  <div class="pt-3">
+                                      <h4 class="tabContntTitle">Snow’s Box</h4>
+                                      <p class="tabContnttext" >349 AED</p>
+                                  </div>
+                              </div>
+  
+                              <div class="col-md-2 d-flex justify-content-end tabcontntCentrMd">
+                                  <div><p class="pt-3" >12 items</p></div>
+                              </div>
+
+                              <div class="col-md-2 d-flex justify-content-end align-items-center tabcontntCentrMd">
+                                <div class="arrowDown">
+                                    <img src="/img/arrowDown.svg" alt="">
+                                </div>
+                              </div>
+  
+                          </div>
+                      </div>
+                      <!-- ========== -->
+  
+                  </div>
+  
+                  <!-- tabsContentBox-1 end -->
+  
+              </div>
+  
+            </div>
+          </div>
+
+        <!-- ================ -->
+      </div>
+    </div>
+
+    <!-- bootstrap script CDNs -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap script CDNs -->
+
+    <script src="./style/js/functions.js"></script>
+  </body>
+</html>
