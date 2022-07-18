@@ -182,7 +182,12 @@
     }
 }
 
-
+/* ======SingleProductPage==== */
+@media screen and (min-width:320px) and (max-width:768px) {
+    .amountProgressCol{
+        width: 33%;
+    }
+}
 
 /* ============================================ */
 
