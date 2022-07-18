@@ -103,19 +103,85 @@ function openSubModel(evt, subModel) {
     document.getElementById(subModel).style.display = "block";
     evt.currentTarget.className += " activeModel";
     }
-// CheckOutPage-1 page script end
+
+// OpenSubscriptionModel page script end
+
+// AnimalDropList function start
+
+function itemList() {
+    var list = document.getElementsByClassName('selectItems-List')[0];
+    if (list.style.display === "none") {
+      list.style.display = "block";
+      list.style.transition = ".5s";
+    } 
+    else {
+      list.style.display = "none";
+    }
+  }
+
+  function itemList2() {
+    var list2 = document.getElementsByClassName('selectItems-List2')[0];
+    if (list2.style.display === "none") {
+      list2.style.display = "block";
+      list2.style.transition = ".5s";
+    } 
+    else {
+      list2.style.display = "none";
+    }
+  }
+
+// AnimalDropList function end
+
+
+// Edit Product Modal
+
+function EditProductModal(evt, block) {
+    var i, modelBlock, editBox;
+    modelBlock = document.getElementsByClassName("modelBlock");
+    for (i = 0; i < modelBlock.length; i++) {
+        modelBlock[i].style.display = "none";
+
+    }
+    editBox = document.getElementsByClassName("editBox");
+    for (i = 0; i < editBox.length; i++) {
+        editBox[i].className = editBox[i].className.replace(" activeModelBlock", "");
+    }
+    document.getElementById(block).style.display = "block";
+    evt.currentTarget.className += " activeModelBlock";
+
+    }
 
 
 
 
 
 
+// function Profile(evt, sec) {
+//     var i, profileInfoBox, profileList;
+//     profileInfoBox = document.getElementsByClassName("profileInfoBox");
+//     for (i = 0; i < profileInfoBox.length; i++) {
+//         profileInfoBox[i].style.display = "none";
+//     }
+//     profileList = document.getElementsByClassName("profileList");
+//     for (i = 0; i < profileList.length; i++) {
+//         profileList[i].className = profileList[i].className.replace(" activeProfileBox", "");
+//     }
+//     document.getElementById(sec).style.display = "block";
+//     evt.currentTarget.className += " activeProfileBox";
+// }
 
 
 
-
-
-
-
-
-
+function openBox(evt, list) {
+    var i, profileInfoBox,  listB ;
+    profileInfoBox = document.getElementsByClassName("profileInfoBox");
+    for (i = 0; i < profileInfoBox.length; i++) {
+        profileInfoBox[i].style.display = "none";
+    }
+        listB  = document.getElementsByClassName(" listB ");
+    for (i = 0; i <  listB .length; i++) {
+            listB [i].className =  listB [i].className.replace(" activeProfileBox", "");
+    }
+    document.getElementById(list).style.display = "block";
+    evt.currentTarget.className += " activeProfileBox";
+}

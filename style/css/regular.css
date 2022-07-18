@@ -332,8 +332,9 @@ body {
 a{
     text-decoration: none;
 }
-a:hover
-
+ul{
+    list-style: none;
+}
 /* SinglePet */
 
 .pet-selectionBox {
@@ -534,8 +535,59 @@ a:hover
     height: 100%; 
     border-radius: 30px;
     background: var(--orengedark);
-  }
+}
+.slider{
+    position: relative;
+}
 
+.owl-nav .owl-prev{
+    position: absolute;
+    top: 34%;
+    left: -50px;
+    color: var(--inptextclr) !important;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    top: 34%;
+    right: -20px;
+    color: var(--inptextclr) !important;
+}
+.owl-nav span{
+    font-size: 60px;
+    width: 80px !important;
+}
+.owl-nav .owl-prev:hover{
+    background: orange !important;
+    height: 0;
+    border-radius: 30px;
+    color: orange !important;
+}
+.owl-nav .owl-next:hover{
+    background: orange !important;
+    height: 0;
+    border-radius: 30px;
+    color: orange !important;
+}
+.backArrow{
+    color: orange;
+    font-size: 24px;
+    animation: backArrow 4s infinite;
+    margin-left: 20px;
+}
+
+@keyframes backArrow {
+    0%{
+        margin-left: 10px;
+    }
+
+    50%{
+        margin-left: 0px;
+    }
+
+    100%{
+        margin-left: 20px;
+    }
+}
 
 /* ================================ */
 
@@ -640,6 +692,7 @@ a:hover
 }
 .subscriptionBox{
     border: 1px solid lightgrey;
+    border-radius: 4px;
     background-color: rgb(240, 238, 238);
 }
 .Subscription{
@@ -741,7 +794,24 @@ a:hover
 .activeModel{
     display: block;
 }
-
+.selectItems-List, .selectItems-List2{
+    display: none;
+    transition: .5s !important;
+}
+.headLine span{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.headLine-drop span{
+    font-size: 16px;
+}
+.headLine{
+    background-color: var(--bgLightOrange);
+    border-radius: 4px;
+}
+.headLine span{
+    color: orange;
+}
 /* ===========ShippingFormPage=================== */
 .logobar{
     min-height: 12vh;
@@ -775,7 +845,6 @@ a:hover
 }
 /* =============================================== */
 .boxTypes{
-    /* border: 1px solid; */
     max-width: 600px;
     margin: auto;
     position: relative;
@@ -813,7 +882,7 @@ a:hover
     background-image: var(--orengedark);
     padding: 50px 40px;
     min-height: 100vh;
-    width: 400px;
+    width: 340px;
     position: fixed;
 }
 .navigation{
@@ -857,47 +926,10 @@ a:hover
 }
 
 
-
-@media screen and (min-width:320px) and (max-width:768px) {
-    .profileSectionPage{
-        display: flex;
-        flex-direction: column;
-    }
-    .infoSection{
-        margin-left: 0px;
-    }
-    .sideCol{
-        width: 100%;
-    }
-    .sideBar{
-        padding: 20px;
-        min-height: 10vh;
-        width: 100%;
-    }
-    .navigation{
-        padding: 00px;
-    }
-    .profileNavigationList{
-        display: flex;
-        justify-content: space-evenly;
-        overflow: scroll;
-        width: 100%;
-    }
-    .sideBar{
-        width: 100%;
-    }
-    .sideBar-ancher{
-        color: var(--white);
-        font-size: 18px;
-        font-weight: bolder;
-    }
-
-}
-
 /* ================= */
 .infoSection{
     width: 100%;
-    margin-left: 400px;
+    margin-left: 340px;
 }
 .profileTopBar{
     padding: 20px 30px;
@@ -917,8 +949,13 @@ a:hover
     font-size: 36px;
     font-weight: bolder;
 }
+.profileImg{
+    max-width: 100px;
+}
 .allInformation-Box{
     padding: 60px 32px;
+    overflow: scroll;
+    height: 90vh;
 }
 .subTitles{
     font-weight: bolder;
@@ -953,4 +990,174 @@ a:hover
 }
 .removeBtn{
     background-color: var(--bluedark);
+}
+.profileInfoBox{
+    display: none;
+}
+
+.activeProfileBox{
+    display: block;
+}
+
+.personalInfo{
+    font-size: 20px;
+}
+.historyBar{
+    background-color: var(--bgLightOrange);
+    border-radius: 6px;
+    color: orange;
+    padding: 10px 10px;
+    border: 1px solid rgb(255, 165, 0,.2);
+}
+.historyBar-title{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px ;
+}
+.historyList{
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(211, 211, 211,.4);
+    background-color: rgb(211, 211, 211,.2);
+}
+.historyDelt-btn{
+    background-color: red;
+    max-width: 80px;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.deliveredItem{
+    color: green;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.pendingItem{
+    color: red;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ===================================== */
+.modelPadding{
+    padding: 30px;
+}
+.editProduct-Modal{
+    max-width: 1300px;
+    top: 20px;
+    font-family: 'Nunito', sans-serif !important;
+}
+.modal-content{
+    position: relative;
+    border-radius: 4px !important;
+    border: none;
+}
+.modal-header{
+    position: absolute;
+    z-index: 2;
+    right: -20px;
+    top: -20px;
+    background-image: var(--orengedark);
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+}
+.closeModel{
+    color: white !important;
+    font-size: 25px;
+}
+.modal-body{
+    padding: 0px;
+    border-radius: 10px;
+}
+.editModel{
+    background: #ECF0F1;
+    position: relative;
+    height: 100%;
+}
+
+.productBox{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.editProduct-Title{
+    font-size: 32px;
+    font-weight: 600;
+}
+.editImgBox{
+    max-width: 100px;
+}
+/* ==/ */
+.itemInfo span{
+    font-size: 18px;
+    line-height: 30px;
+}
+.productEdit-box{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    max-width: 100%;
+}
+.editBox{
+    border: none;
+    cursor: pointer;
+}
+.editBox h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+.productSelection-Box{
+    background-color: var(--bgLightOrange);
+    border-radius: 6px;
+}
+.dividerLine{
+    border: 1px solid lightgrey;
+}
+.product-subTitle{
+    font-size: 16px;
+    color: orange;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.bottomBar{
+    background: lightgrey;
+    width: 100%;
+    height: 1px;
+}
+.sizeBox{
+    background: rgb(211, 211, 211,.2);
+    border-radius: 6px;
+}
+.sizeSelection{
+    overflow: scroll;
+    height: 56vh;
+}
+.sizeSelection::-webkit-scrollbar {
+    display: none;
+}
+.block2{
+    display: none;
+}
+.activeModelBlock{
+    display: block;
+}
+.img1{
+    width: 60px;
+}
+.footerBtns{
+    background-image: var(--orengedark);
+    border-bottom-right-radius: 4px;
+    color: white;
+    margin-right: 10px;
+}
+.modelCloseBar{
+    font-size: 20px;
+}
+.modelCloseBar:hover{
+    color: white;
+}
+.editImgBox2{
+    max-width: 60px;
 }

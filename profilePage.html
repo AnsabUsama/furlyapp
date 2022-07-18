@@ -45,12 +45,12 @@
                     <div class="sideBarLogo"><img src="/img/FurlyLogo.svg" alt=""></div>
                         <div class="navigation">
                             <ul class="profileNavigationList p-0">
-                                <li class="d-flex align-items-center my-4" > <i class="fa-solid fa-house sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >  Home</a></li>
-                                <li class="d-flex align-items-center my-4" > <i class="fa-solid fa-user sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >Profile</a></li>
-                                <li class="d-flex align-items-center my-4" > <i class="fa-solid fa-file-lines sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >Subscription</a></li>
-                                <li class="d-flex align-items-center my-4" > <i class="fa-solid fa-location-dot sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >My Address</a></li>
-                                <li class="d-flex align-items-center my-4" > <i class="fa-solid fa-paw sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >My Pets</a></li>
-                                <li class="d-flex align-items-center my-4" > <i class="fa-solid fa-clock-rotate-left sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >Order History</a></li>
+                                <li class="d-flex align-items-center profileList my-4" onclick="openBox(event, 'sec-1')" > <i class="fa-solid fa-house sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >  Home</a></li>
+                                <li class="d-flex align-items-center profileList my-4" onclick="openBox(event, 'sec-2')" > <i class="fa-solid fa-user sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >Profile</a></li>
+                                <li class="d-flex align-items-center profileList my-4" onclick="openBox(event, 'sec-3')" > <i class="fa-solid fa-file-lines sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >Subscription</a></li>
+                                <li class="d-flex align-items-center profileList my-4" onclick="openBox(event, 'sec-4')" > <i class="fa-solid fa-location-dot sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >My Address</a></li>
+                                <li class="d-flex align-items-center profileList my-4" onclick="openBox(event, 'sec-5')" > <i class="fa-solid fa-paw sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >My Pets</a></li>
+                                <li class="d-flex align-items-center profileList my-4" onclick="openBox(event, 'sec-6')" > <i class="fa-solid fa-clock-rotate-left sideBar-ancher"></i> <a href="" class="sideBar-ancher ps-3" >Order History</a></li>
                             </ul>
                         </div>
                 </div>
@@ -66,110 +66,340 @@
                         <div class="pt-2 d-flex justify-content-between align-items-center">
                             <h2 class="clrDark profileName" >Lucy Lure</h2>
                             <div class="d-flex align-items-center justify-content-center">
-                                <div class="px-3"><img src="/img/profilePic.svg" alt=""></div>
+                                <div class="px-3 profileImg"><img src="/img/profilePic.svg" class="w-100" alt=""></div>
                                 <div class="px-3"><img src="/img/arrowDownBlack.svg" alt=""></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="allInformation-Box">
+            <!-- =========================== -->
 
-                    <div class="addressInfo d-flex justify-content-between align-items-center">
-                        <h4 class="clrDark subTitles">My Address</h4>
-                        <div class="addressBtn text-center"><a href="" class="text-light">Add New Address</a></div>
+            <div id="sec-1" class="allInformation-Box profileInfoBox ">
+
+                <div class="addressInfo d-flex justify-content-between align-items-center">
+                    <h4 class="clrDark subTitles pt-1">My Profile</h4>
+                    <div class="addressBtn text-center"><a href="" class="text-light">Edit Profile</a></div>
+                </div>
+
+                <div class="infoBoxes py-5">
+
+                    <div class="addresBox">
+                       
+                        
+                        <div class="addresDetail d-flex justify-content-between pt-5">
+                           <h1>Boxx -1</h1>
+                        </div>
                     </div>
 
-                    <div class="infoBoxes py-5">
+                </div>
+            </div>
+            
+            <!-- =========================== -->
+            <div id="sec-2" class="allInformation-Box profileInfoBox ">
 
-                        <div class="addresBox">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h4 class="clrDark subTitles">Lucy Lure</h4>
-                                <span class="addressCategory">Home</span>
+                <div class="addressInfo d-flex justify-content-between align-items-center">
+                    <h4 class="clrDark subTitles pt-1">My Profile</h4>
+                    <div class="addressBtn text-center"><a href="" class="text-light">Edit Profile</a></div>
+                </div>
+
+                <div class="infoBoxes py-5">
+
+                    <div class="addresBox">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap1">
+                                <div class="profileImg"><img src="/img/profilePic.svg" class="w-100" alt=""></div> <h4 class="clrDark subTitles pt-1">Lucy Lure</h4>
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <span>House no. 197 sector 117, street 1A City,State<br/>
-                                city<br/>
-                                Pin Code<br/>
-                                State<br/>
-                                Mobile : 934849373839</span>
+                            <span class="addressCategory">Home</span>
+                        </div>
+                        
+                        <div class="addresDetail d-flex justify-content-between pt-5">
+                            <div class="d-flex flex-column">
+                                <span class="my-1 personalInfo"><strong>First Name :</strong>  Lucy</span>
+                                <span class="my-1 personalInfo"><strong>Last Name :</strong> Lure</span>
+                                <span class="my-1 personalInfo"><strong>Email :</strong> example@gmail.com</span>
+                            </div>
 
-                                <div class="d-flex align-items-end">
-                                    <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
-                                    <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
-                                </div>
+                            <div class="updationBtns d-flex align-items-end gap1">
+                                <div class="upadteBtns text-center "><a href="" class="clrDark">Edit</a></div>
+                                <div class="upadteBtns removeBtn text-center "><a href="" class="text-light">Remove</a></div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- ====BOX-2==== -->
+                </div>
+            </div>
 
-                        <div class="addresBox my-5">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h4 class="clrDark subTitles">Lucy Lure</h4>
-                                <span class="addressCategory">Home</span>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <span>House no. 197 sector 117, street 1A City,State<br/>
-                                city<br/>
-                                Pin Code<br/>
-                                State<br/>
-                                Mobile : 934849373839</span>
+            <!-- ================================= -->
+                         
+            <div id="sec-3" class="allInformation-Box profileInfoBox">
 
-                                <div class="d-flex align-items-end">
-                                    <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
-                                    <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="addressInfo d-flex justify-content-between align-items-center">
+                    <h4 class="clrDark subTitles pt-1">My Pets</h4>
+                    <div class="addressBtn text-center"><a href="" class="text-light">Add New Pet</a></div>
+                </div>
 
-                         <!-- ====BOX-3==== -->
+                <div class="infoBoxes py-5">
+                    <div class="subscriptionBox d-flex justify-content-start gap1 p-3">
 
-                         <div class="addresBox my-5">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h4 class="clrDark subTitles">Lucy Lure</h4>
-                                <span class="addressCategory">Home</span>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <span>House no. 197 sector 117, street 1A City,State<br/>
-                                city<br/>
-                                Pin Code<br/>
-                                State<br/>
-                                Mobile : 934849373839</span>
-
-                                <div class="d-flex align-items-end">
-                                    <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
-                                    <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
-                                </div>
+                        <!-- Monthly-subscription -->
+                        <div class="Subscription d-flex align-items-center px-5">
+                            <div class="pt-3 text-center">
+                                <h4 class="SubscriptionText"><strong>Monthly Subscripion</strong></h4>
+                                <p class="SubscriptionText" >Get your furly box delivered each month</p>
                             </div>
                         </div>
+                        <!-- oneTime-subscription -->
+                        <div class="Subscription d-flex align-items-center px-5">
+                            <div class="pt-3 text-center">
+                            <h4 class="SubscriptionText"><strong>One-time Subscripion</strong></h4>
+                            <p class="SubscriptionText" >one payment - no monthly charges</p>
+                        </div>
+                    </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <!-- ================================== -->
+
+            <div id="sec-4"  class="allInformation-Box profileInfoBox ">
+
+                <div class="addressInfo d-flex justify-content-between align-items-center">
+                    <h4 class="clrDark subTitles pt-1">My Address</h4>
+                    <div class="addressBtn text-center"><a href="" class="text-light">Add New Address</a></div>
+                </div>
+
+                <div class="infoBoxes py-5">
+
+                    <div class="addresBox">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="clrDark subTitles">Lucy Lure</h4>
+                            <span class="addressCategory">Home</span>
+                        </div>
+                        <div class="addresDetail d-flex justify-content-between">
+                            <span>House no. 197 sector 117, street 1A City,State<br/>
+                            city<br/>
+                            Pin Code<br/>
+                            State<br/>
+                            Mobile : 934849373839</span>
+
+                            <div class="updationBtns d-flex align-items-end">
+                                <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
+                                <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====BOX-2==== -->
+
+                    <div class="addresBox my-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="clrDark subTitles">Lucy Lure</h4>
+                            <span class="addressCategory">Home</span>
+                        </div>
+                        <div class="addresDetail d-flex justify-content-between">
+                            <span>House no. 197 sector 117, street 1A City,State<br/>
+                            city<br/>
+                            Pin Code<br/>
+                            State<br/>
+                            Mobile : 934849373839</span>
+
+                            <div class="updationBtns d-flex align-items-end">
+                                <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
+                                <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
+                            </div>
+                        </div>
+                    </div>
 
                         <!-- ====BOX-3==== -->
 
                         <div class="addresBox my-5">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h4 class="clrDark subTitles">Lucy Lure</h4>
-                                <span class="addressCategory">Home</span>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <span>House no. 197 sector 117, street 1A City,State<br/>
-                                city<br/>
-                                Pin Code<br/>
-                                State<br/>
-                                Mobile : 934849373839</span>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="clrDark subTitles">Lucy Lure</h4>
+                            <span class="addressCategory">Home</span>
+                        </div>
+                        <div class="addresDetail d-flex justify-content-between">
+                            <span>House no. 197 sector 117, street 1A City,State<br/>
+                            city<br/>
+                            Pin Code<br/>
+                            State<br/>
+                            Mobile : 934849373839</span>
 
-                                <div class="d-flex align-items-end">
-                                    <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
-                                    <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
-                                </div>
+                            <div class="updationBtns d-flex align-items-end">
+                                <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
+                                <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====BOX-4==== -->
+
+                    <div class="addresBox my-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="clrDark subTitles">Lucy Lure</h4>
+                            <span class="addressCategory">Home</span>
+                        </div>
+                        <div class="addresDetail d-flex justify-content-between">
+                            <span>House no. 197 sector 117, street 1A City,State<br/>
+                            city<br/>
+                            Pin Code<br/>
+                            State<br/>
+                            Mobile : 934849373839</span>
+
+                            <div class="updationBtns d-flex align-items-end">
+                                <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
+                                <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
+                            </div>
+                        </div>
+                    </div>
+    <!-- ====BOX-5==== -->
+
+    <div class="addresBox my-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <h4 class="clrDark subTitles">Lucy Lure</h4>
+        <span class="addressCategory">Home</span>
+    </div>
+    <div class="addresDetail d-flex justify-content-between">
+        <span>House no. 197 sector 117, street 1A City,State<br/>
+        city<br/>
+        Pin Code<br/>
+        State<br/>
+        Mobile : 934849373839</span>
+
+        <div class="updationBtns d-flex align-items-end">
+            <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
+            <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
+        </div>
+    </div>
+</div>
+        <!-- ====BOX-6==== -->
+
+        <div class="addresBox my-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="clrDark subTitles">Lucy Lure</h4>
+            <span class="addressCategory">Home</span>
+        </div>
+        <div class="addresDetail d-flex justify-content-between">
+            <span>House no. 197 sector 117, street 1A City,State<br/>
+            city<br/>
+            Pin Code<br/>
+            State<br/>
+            Mobile : 934849373839</span>
+
+            <div class="updationBtns d-flex align-items-end">
+                <div class="upadteBtns text-center mx-2"><a href="" class="clrDark">Edit</a></div>
+                <div class="upadteBtns removeBtn text-center mx-2"><a href="" class="text-light">Remove</a></div>
+            </div>
+        </div>
+    </div>
+                    
+
+                </div>
+
+            </div>
+
+            <!-- ================================ -->
+
+            <div id="sec-5" class="allInformation-Box profileInfoBox">
+
+                <div class="addressInfo d-flex justify-content-between align-items-center">
+                    <h4 class="clrDark subTitles pt-1">My Pets</h4>
+                    <div class="addressBtn text-center"><a href="" class="text-light">Add New Pet</a></div>
+                </div>
+
+                <div class="infoBoxes py-5">
+                    <div class="addresBox">
+                       
+                        <div class="d-flex gap1 flex-wrap">
+                            <div class="pets my-1 border"><img src="/img/dog1.svg" class="w-100" alt="">
+                                <p class="spansubhead pet-title">Small<br/> 1-10 Kg</p>
+                            </div>
+                            <div class="pets  my-1 border"><img src="/img/dog2.svg" class="w-100" alt="">
+                                <p class="spansubhead pet-title">Medium<br/> 11-20 Kg</p>
+                            </div>
+                            <div class="pets  my-1 border"><img src="/img/dog3.svg" class="w-100" alt="">
+                                <p class="spansubhead pet-title">Large<br/> 20+ Kg</p>
                             </div>
                         </div>
 
+                    </div>
+            
+                </div>
+            </div>
+            <!-- ====================== -->
+            
+            <div id="sec-6" class="allInformation-Box profileInfoBox activeProfileBox">
+
+                <div class="addressInfo d-flex justify-content-between align-items-center">
+                    <h4 class="clrDark subTitles pt-1">Order History</h4>
+                    <div class="addressBtn text-center"><a href="" class="text-light">Edit History</a></div>
+                </div>
+
+                <div class="infoBoxes py-5">
+
+                    <div class="addresBox">
+                       
                         
+                        <div class="addresDetail">
+                          <!-- == -->
+                          <div class="historyBar mb-5">
+                            <div class="row d-flex justify-content-evenly align-items-center">
+                                <div class="col-md-2"><h3 class="historyBar-title" >Title</h3></div>
+                                <div class="col-md-2"><h3 class="historyBar-title" >Items</h3></div>
+                                <div class="col-md-2"><h3 class="historyBar-title" >Price</h3></div>
+                                <div class="col-md-2"><h3 class="historyBar-title" >Date</h3></div>
+                                <div class="col-md-2"><h3 class="historyBar-title" >Status</h3></div>
+                                <div class="col-md-2"><h3 class="historyBar-title" >Update</h3></div>
+                              </div>
+                          </div>
+
+                          <!-- == -->
+                          <div class="historyList my-3 py-2">
+                            <div class="row d-flex justify-content-evenly align-items-center">
+                                <div class="col-md-2"><span>Dry Food</span></div>
+                                <div class="col-md-2"><span>3</span></div>
+                                <div class="col-md-2"><span>6 AED</span></div>
+                                <div class="col-md-2"><span>02-08-2022</span></div>
+                                <div class="col-md-2"><span class="deliveredItem" >Delivered</span></div>
+                                <div class="col-md-2"><div class="historyDelt-btn text-center"><a href="" class="text-light" >Delete</a></div></div>
+                            </div>
+                        </div>
+                        <!-- ===== -->
+                          <!-- == -->
+                          <div class="historyList my-3 py-2">
+                            <div class="row d-flex justify-content-evenly align-items-center">
+                                <div class="col-md-2"><span>Wet Food</span></div>
+                                <div class="col-md-2"><span>4</span></div>
+                                <div class="col-md-2"><span>8 AED</span></div>
+                                <div class="col-md-2"><span>04-09-2022</span></div>
+                                <div class="col-md-2"><span class="pendingItem" >Pending</span></div>
+                                <div class="col-md-2"><div class="historyDelt-btn text-center"><a href="" class="text-light" >Delete</a></div></div>
+                            </div>
+                        </div>
+                          <!-- == -->
+                          <div class="historyList my-3 py-2">
+                            <div class="row d-flex justify-content-evenly align-items-center">
+                                <div class="col-md-2"><span>Extras</span></div>
+                                <div class="col-md-2"><span>5</span></div>
+                                <div class="col-md-2"><span>10 AED</span></div>
+                                <div class="col-md-2"><span>08-10-2022</span></div>
+                                <div class="col-md-2"><span class="pendingItem" >Pending</span></div>
+                                <div class="col-md-2"><div class="historyDelt-btn text-center"><a href="" class="text-light" >Delete</a></div></div>
+                            </div>
+                        </div>
+
+
 
                     </div>
-<!-- ================================ -->
-
+                    </div>
 
                 </div>
+            </div>
+            <!-- ================================== -->
+
+                </div>
+
+                <!-- ================= -->
 
                 </div>
             </div>
