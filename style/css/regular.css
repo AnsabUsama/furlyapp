@@ -504,7 +504,72 @@ ul{
     font-size: 14px;
     font-weight: 600;
 }
+.slide-progress2{
+    width: 100%;
+    /* max-width: 100%; */
+    height: 38px !important;
+    border-radius: 30px;
+    background: var(--formbg);
+    position: relative;
+  }
+  .amountProgressBar{
+    width: 50%;
+    max-width: 100%;
+    height: 100%; 
+    border-radius: 30px;
+    background: var(--orengedark);
+    position: absolute;
+    top: 0;
+}
+.innerCircle{
+    position: absolute;
+    bottom: -7px;
+    right: -2px;
+    background: var(--white);
+    border: 2px solid white;
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    padding: 2px;
+    box-shadow: rgb(149 157 165 / 44%) 0px 8px 24px;;
+}
+.amountCircle{
+    font-size: 14px;
+    line-height: 10px;
+    color: var(--white);
+    color: orange;
+    font-weight: 600;
+}
+.lineBars{
+    position: absolute;
+    width: 100%;
+}
+.line{
+    height: 4vh;
+    width: 2px;
+    background-color: grey;
+    z-index: 50;
+}
+.lineBars2{
+    position: absolute;
+    width: 100%;
+    top: -19px;
+}
 
+.line2{
+    height: 2vh;
+    width: 2px;
+    background-color: grey;
+    z-index: 50;
+}
+.progressInfo-text{
+    /* position: absolute; */
+    width: 100%;
+    margin-top: -20px;
+}
+/* .slide-progress2:hover .line{
+    background-color: white;
+} */
 /* ============owl-carousel========== */
 
 .home-demo .item {
