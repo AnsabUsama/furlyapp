@@ -570,6 +570,33 @@ ul{
 /* .slide-progress2:hover .line{
     background-color: white;
 } */
+.progressText{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.lin{
+    position: relative;
+}
+.toolTip{
+    position: absolute;
+    top: -50px;
+    right: -10px;
+    width: 160px;
+    height: 0px;
+    background-color: white;
+    border-radius: 4px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 95% 75%, 94% 100%, 88% 76%, 0% 75%);
+    transition: .3s;
+}
+.toolTip-text{
+    font-size: 12px;
+    padding: 6px;
+}
+.toolTip-iconImg:hover .toolTip{
+    height: 60px;
+    /* background-color: red; */
+}
 /* ============owl-carousel========== */
 
 .home-demo .item {
