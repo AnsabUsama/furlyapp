@@ -1061,7 +1061,7 @@ ul{
     max-width: 100px;
 }
 .allInformation-Box{
-    padding: 60px 32px;
+    padding: 30px 32px;
     overflow: scroll;
     height: 90vh;
 }
@@ -1268,4 +1268,125 @@ ul{
 }
 .editImgBox2{
     max-width: 60px;
+}
+/* ============================================= */
+
+
+
+
+
+/* ===========Dashboard Page========================== */
+
+.titleBar{
+    background-image: var(--orengedark);
+    border: 1px solid orange;
+    border-radius: 10px;
+    min-height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+.barText{
+    color: white;
+    z-index: 5;
+}
+.petTitle{
+    font-size: 60px;
+}
+.tapeImg{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    max-width: 420px;
+    z-index: 1;
+}
+.patternImg{
+    position: absolute;
+    width: 200px;
+}
+.patternImg1{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
+.patternImg2{
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+}
+.pet{
+    position: absolute;
+    max-width: 200px;
+    z-index: 1;
+}
+.pet1{
+    top: 60px;
+    left: 100px;
+}
+.graph{
+    max-width: 100%;
+    min-height: 20vh;
+    background-color: rgb(216, 215, 215);
+    border-radius: 10px;
+}
+.orderBox{
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    transition: .3s;
+}
+.orderBox:hover{
+    border: 2px solid orange;
+}
+.OrderBox-Block{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+}
+.Order-petImg{
+    max-width: 180px;
+}
+.OrderBox-title{
+    font-size: 24px;
+}
+.requestBtn{
+    background: var(--bluedark);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* width: 200px; */
+    text-align: center;
+    font-size: 14px;
+}
+.requestBtn:hover{
+    color: white;
+}
+.order-subTitles{
+    font-size: 20px;
+    font-weight: bold;
+}
+.orderList{
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241 ,.4);
+}
+/* === */
+.orders{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: .3s;
+}
+.orders:hover{
+    border: 2px solid orange;
+}
+.Order-boxImg{
+    max-width: 50px;
+}
+.orderDate{
+    font-size: 16px;
+}
+
+.patternImg{
+    transform: rotate(90deg);
 }
